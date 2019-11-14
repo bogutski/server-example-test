@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2019-11-14T09:17:58.419Z",
-    "end": "2019-11-14T09:17:58.652Z",
-    "duration": 233,
+    "start": "2019-11-14T09:26:31.939Z",
+    "end": "2019-11-14T09:26:32.163Z",
+    "duration": 224,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "91612d5d-5783-4558-8659-7435a6786538",
+      "uuid": "893fa77d-ab65-4cb3-a9b1-4cbb987dd215",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "92606a19-c24a-4c6e-8802-05bd048d5f1e",
+          "uuid": "22e89e58-4e91-46e8-98b2-9be62a53e999",
           "title": "Test without DB ----- GET /info",
           "fullFile": "/Users/m/a/pasv-server-api-test/src/modules/user/_test/login.spec.js",
           "file": "/src/modules/user/_test/login.spec.js",
@@ -47,15 +47,15 @@
               "context": null,
               "code": "// expect(1).eq(1);\n// done();\n(0, _supertest.default)(_index.default).get('/info').set('Accept', 'application/json').expect('Content-Type', /json/).expect(200, done);",
               "err": {},
-              "uuid": "8c14a9dc-03fe-4435-b460-c4c95054b184",
-              "parentUUID": "92606a19-c24a-4c6e-8802-05bd048d5f1e",
+              "uuid": "02c045aa-5365-49b2-b8e4-86d9c8f30436",
+              "parentUUID": "22e89e58-4e91-46e8-98b2-9be62a53e999",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8c14a9dc-03fe-4435-b460-c4c95054b184"
+            "02c045aa-5365-49b2-b8e4-86d9c8f30436"
           ],
           "failures": [],
           "pending": [],
@@ -66,7 +66,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "d98e536c-a154-4c16-836b-8176f761e5a9",
+          "uuid": "7716aaf8-4454-457c-ac78-7543eb576a59",
           "title": "Test with DB ------- User register",
           "fullFile": "/Users/m/a/pasv-server-api-test/src/modules/user/_test/login.spec.js",
           "file": "/src/modules/user/_test/login.spec.js",
@@ -77,7 +77,7 @@
               "title": "respond with json containing a list of all users",
               "fullTitle": "Test with DB ------- User register respond with json containing a list of all users",
               "timedOut": false,
-              "duration": 113,
+              "duration": 104,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,20 +86,20 @@
               "context": null,
               "code": "(0, _supertest.default)(_index.default).post('/user').send({\n  email: Math.random() + 's1@pasv.us',\n  password: '123123',\n  name: 'John Doe'\n}).set('Accept', 'application/json').expect('Content-Type', /json/).expect(200, done);",
               "err": {},
-              "uuid": "ca98f7df-b5e9-445f-b709-1268b83355b6",
-              "parentUUID": "d98e536c-a154-4c16-836b-8176f761e5a9",
+              "uuid": "f73710c4-9c2c-4aea-a4a4-9ff5dfdec902",
+              "parentUUID": "7716aaf8-4454-457c-ac78-7543eb576a59",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ca98f7df-b5e9-445f-b709-1268b83355b6"
+            "f73710c4-9c2c-4aea-a4a4-9ff5dfdec902"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 113,
+          "duration": 104,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
