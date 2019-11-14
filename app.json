@@ -1,0 +1,6 @@
+{
+  "name": "pasv-serverr",
+  "description": "pasv-server docker heroku",
+  "image": "heroku/nodejs",
+  "addons": []
+}

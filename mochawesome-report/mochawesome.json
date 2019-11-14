@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-11-14T09:17:58.419Z",
+    "end": "2019-11-14T09:17:58.652Z",
+    "duration": 233,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "91612d5d-5783-4558-8659-7435a6786538",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "92606a19-c24a-4c6e-8802-05bd048d5f1e",
+          "title": "Test without DB ----- GET /info",
+          "fullFile": "/Users/m/a/pasv-server-api-test/src/modules/user/_test/login.spec.js",
+          "file": "/src/modules/user/_test/login.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "respond with json containing a list of all users",
+              "fullTitle": "Test without DB ----- GET /info respond with json containing a list of all users",
+              "timedOut": false,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// expect(1).eq(1);\n// done();\n(0, _supertest.default)(_index.default).get('/info').set('Accept', 'application/json').expect('Content-Type', /json/).expect(200, done);",
+              "err": {},
+              "uuid": "8c14a9dc-03fe-4435-b460-c4c95054b184",
+              "parentUUID": "92606a19-c24a-4c6e-8802-05bd048d5f1e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8c14a9dc-03fe-4435-b460-c4c95054b184"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d98e536c-a154-4c16-836b-8176f761e5a9",
+          "title": "Test with DB ------- User register",
+          "fullFile": "/Users/m/a/pasv-server-api-test/src/modules/user/_test/login.spec.js",
+          "file": "/src/modules/user/_test/login.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "respond with json containing a list of all users",
+              "fullTitle": "Test with DB ------- User register respond with json containing a list of all users",
+              "timedOut": false,
+              "duration": 113,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _supertest.default)(_index.default).post('/user').send({\n  email: Math.random() + 's1@pasv.us',\n  password: '123123',\n  name: 'John Doe'\n}).set('Accept', 'application/json').expect('Content-Type', /json/).expect(200, done);",
+              "err": {},
+              "uuid": "ca98f7df-b5e9-445f-b709-1268b83355b6",
+              "parentUUID": "d98e536c-a154-4c16-836b-8176f761e5a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ca98f7df-b5e9-445f-b709-1268b83355b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 113,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}
