@@ -14,7 +14,7 @@
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && babel src -d build",
     "lint": "eslint --ext .js ./src/modules",
-    "test": "NODE_ENV=local mocha ./src/**/*.spec.js --reporter mochawesome -r dotenv/config --require @babel/register"
+    "test": "NODE_ENV=local mocha ./src/**/*.spec.js --reporter mochawesome -r dotenv/config --require @babel/register --exit"
   },
   "repository": {
     "type": "git",
