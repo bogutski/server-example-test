@@ -34,4 +34,3 @@ describe('Test with DB ------- User register', function() {
       .expect(200, done);
   });
 });
-
